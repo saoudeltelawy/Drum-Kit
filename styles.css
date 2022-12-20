@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: #283149;
+}
+/* Controlled Classes  */
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+/* End Of Controlled Classes  */
+
+h1 {
+  font-size: 5rem;
+  color: #dbedf3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #da0464d0;
+}
+
+button {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.w {
+  /* flex: 1; */
+  background: url("images/tom1.png") no-repeat center;
+  position: relative;
+}
+
+.blurry_20 {
+  background-color: rgb(156 156 156 / 18%);
+  /* background-color: goldenrod; */
+  /* padding: 21px 61px; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 20px;
+  top: 0;
+}
+
+.a {
+  background: url("images/tom2.png") no-repeat center;
+  position: relative;
+}
+
+.s {
+  background: url("images/tom3.png") no-repeat center;
+  position: relative;
+}
+
+.d {
+  background: url("images/tom4.png") no-repeat center;
+  position: relative;
+}
+
+.j {
+  background: url("images/snare.png") no-repeat center;
+  position: relative;
+}
+
+.k {
+  background: url("images/crash.png") no-repeat center;
+  position: relative;
+}
+
+.l {
+  flex: 1;
+  background: url("images/kick.png") no-repeat center;
+  position: relative;
+}
+
+.set {
+  margin: 8% auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404b69;
+  font-size: 5rem;
+  font-family: "Arvo", cursive;
+  font-weight: 900;
+  color: #da0463;
+  text-shadow: 3px 0 #dbedf3;
+
+  border-radius: 15px;
+  /* display: inline-block; */
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  background-size: contain;
+}
+
+/* Footer  */
+footer {
+  color: #dbedf3;
+  margin-top: 15.2rem;
+  font-size: 0.75rem;
+  color: #e3e3e3;
+  font-family: sans-serif;
+}
