@@ -7,12 +7,14 @@ drumButtons.forEach(function (button) {
     let buttonContent = this.textContent;
     // Call the Function to avoid 2 Switches
     makeSound(buttonContent);
+    buttonAnimation(buttonContent);
   });
 });
 
 // For Keyboard Events (Clicks) // Detecting Button click
 document.addEventListener("keydown", function (e) {
   makeSound(e.key);
+  buttonAnimation(e.key);
 });
 
 function makeSound(key) {
@@ -56,4 +58,17 @@ function makeSound(key) {
       alert("Key is not assigned!");
       break;
   }
+}
+
+function buttonAnimation(currentKey) {
+  let activeButton = document.querySelector("." + currentKey);
+  // console.log(activeButton);
+
+  // Add Animation Class
+  activeButton.classList.add("pressed");
+
+  // Remove the animation Class after X Seconds
+  setTimeout(() => {
+    activeButton.classList.remove("pressed");
+  }, 250); //2.5 Seconds
 }
